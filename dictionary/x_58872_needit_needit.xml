@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="what needed" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resource1" sequence="0" value="human resource1"/>
+                <element inactive_on_update="false" label="human resource2" sequence="1" value="human resource2"/>
+                <element inactive_on_update="false" label="legal1" sequence="2" value="legal1"/>
+                <element inactive_on_update="false" label="legal2" sequence="3" value="legal2"/>
+                <element inactive_on_update="false" label="facilities1" sequence="4" value="facilities1"/>
+                <element inactive_on_update="false" label="facilities2" sequence="5" value="facilities2"/>
+                <element inactive_on_update="false" label="your choice1" sequence="6" value="your choice1"/>
+                <element inactive_on_update="false" label="your choice2" sequence="7" value="your choice2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="legal" label="request type" mandatory="true" max_length="40" name="u_choice_7" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_glide_date_time_6" type="glide_date_time"/>
+        <element label="requested for" mandatory="true" max_length="32" name="u_reference_5" reference="sys_user" type="reference"/>
+    </element>
+</database>
